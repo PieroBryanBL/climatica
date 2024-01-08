@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Climática</title>
+  </head>
+  <body class="body">
+    <div class="container">
+      <div class="header">
+        <h1>Climática</h1>
+        <div class="containerSearch">
+          <input
+            type="text"
+            placeholder="Search a country, region or place whatever you want"
+            class="header_input"
+            id="searchPlace"
+          />
+          <button onclick="search()" class="btn">Search</button>
+        </div>
+      </div>
+
+      <main class="main">
+        <p>
+          If you wanna see your result, then search first a country, city or
+          region that you need to know
+        </p>
+
+        <ul>
+          <li class="ul_li">
+            <span class="material-symbols-outlined">Flag</span>
+            <strong>Country:</strong>
+            <span id="country">...</span>
+          </li>
+          <li class="ul_li">
+            <span class="material-symbols-outlined"> apartment </span>
+            <strong>City:</strong>
+            <span id="city">...</span>
+          </li>
+          <li class="ul_li">
+            <span class="material-symbols-outlined"> south_america </span>
+            <strong>Region:</strong> <span id="region">...</span>
+          </li>
+          <li class="ul_li">
+            <span class="material-symbols-outlined"> calendar_month </span>
+            <strong>Date:</strong> <span id="date">...</span>
+          </li>
+          <li class="ul_li">
+            <span class="material-symbols-outlined"> rainy </span>
+            <strong>Weather:</strong>
+            <span id="weather">...</span>
+          </li>
+          <li class="ul_li">
+            <span class="material-symbols-outlined"> nights_stay </span>
+            <strong>Feels Like:</strong> <span id="feels_like">...</span>
+          </li>
+        </ul>
+      </main>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

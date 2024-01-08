@@ -1,0 +1,121 @@
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  background-color: #5353dc;
+  color: white;
+  border-radius: 5px;
+  border-style: none;
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 1080px) {
+  .btn {
+    width: 100%;
+  }
+}
+
+.ul_li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.body {
+  background-image: url(https://picsum.photos/seed/picsum/1800/1500);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: soft-light;
+  background-color: #00000092;
+  color: white;
+  background-position: center center;
+  overflow: hidden;
+  font-family: "PT Sans", sans-serif;
+  animation: background 2s ease-in-out;
+  transition: 2s ease;
+}
+
+@keyframes background {
+  from {
+    background-color: #00000000;
+    filter: brightness(0.9);
+  }
+  to {
+    background-color: #00000092;
+  }
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.containerSearch {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  width: 40%;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 24px;
+}
+
+@media (max-width: 1080px) {
+  .header {
+    font-size: 16px;
+    margin: 3rem 0;
+  }
+
+  .containerSearch {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.header_input {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 10px 20px;
+  border-style: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+@media (max-width: 1080px) {
+  .header_input {
+    width: 100%;
+
+    font-size: 14px;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 17px;
+}
+
+@media (max-width: 1080px) {
+  .main {
+    gap: 0.5rem;
+    font-size: 14px;
+  }
+}
